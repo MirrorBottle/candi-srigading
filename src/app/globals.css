@@ -7,6 +7,11 @@
   :root {
     --plyr-color-main: theme('colors.accent.DEFAULT');
   }
+
+  html,
+  body {
+    @apply font-sans;
+  }
 }
 
 @layer components {
