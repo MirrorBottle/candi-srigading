@@ -6,7 +6,7 @@ import HeaderMobile from "@/components/Layout/HeaderMobile";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], variable: '--font-poppins' });
 
 export const metadata = {
   title: "Candi Srigading",
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={clsx(poppins.className, "antialiased tracking-tight font-base text-gray-500 text-base h-full bg-white dark:bg-gray-900 overflow-x-hidden")}>
+      <body className={`${poppins.className} antialiased tracking-tight font-base text-gray-500 text-base h-full bg-white dark:bg-gray-900 overflow-x-hidden`}>
         <div id="site-wrapper" className="flex flex-col h-full js-site-wrapper">
           <Header />
           <HeaderMobile />

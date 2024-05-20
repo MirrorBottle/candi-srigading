@@ -53,6 +53,7 @@ module.exports = {
         success: '#615dfa',
       },
       fontFamily: {
+        sans: ['var(--font-poppins)'],
         base: [ '"Poppins", sans-serif' ],
         heading: [ '"Poppins", sans-serif' ]
       },
