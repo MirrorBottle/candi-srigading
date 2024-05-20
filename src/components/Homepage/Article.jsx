@@ -24,60 +24,60 @@ export default function HomepageArticle() {
           <div class="col-span-full sm:col-span-6 lg:col-span-4">
             <figure class="group overflow-hidden bg-gray-900">
               <a href="_yt1-single.html">
-                <img class="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src="assets/img/yt1/samples/post-img-1-370x240.jpg" alt="Next month I’ll be unboxing the exclusive “Last of Them II” deluxe version" />
+                <img class="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src="/img/articles/1.jpg" />
               </a>
             </figure>
             <div class="relative -mt-20 mr-8 lg:mr-10">
               <div class="inline-flex bg-accent px-2 py-[6px] text-xs font-bold uppercase leading-none text-white">
-                Previews
+                Studi
               </div>
               <div class="bg-white dark:bg-gray-800 p-6">
                 <h2 class="mb-4 text-xl font-bold leading-6 lg:tracking-tighter">
                   <a href="_yt1-single.html" class="text-primary transition-colors hover:text-accent dark:text-white dark:hover:text-accent">
-                    Next month I’ll be unboxing the exclusive “Last of Them II” deluxe version
+                    Sejarah Penemuan Candi Srigading
                   </a>
                 </h2>
-                <div class="text-sm">March 18, 2022</div>
+                <div class="text-sm">21 Mei, 2024</div>
               </div>
             </div>
           </div>
           <div class="col-span-full sm:col-span-6 lg:col-span-4">
             <figure class="group overflow-hidden bg-gray-900">
               <a href="_yt1-single.html">
-                <img class="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src="assets/img/yt1/samples/post-img-2-370x240.jpg" alt="I’ll be at the next YouCon 20’ in New York unveiling new and exciting gadgets!" />
+                <img class="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src="/img/hero.png" />
               </a>
             </figure>
             <div class="relative -mt-20 mr-8 lg:mr-10">
               <div class="inline-flex bg-accent px-2 py-[6px] text-xs font-bold uppercase leading-none text-white">
-                The Channel
+                Studi
               </div>
               <div class="bg-white dark:bg-gray-800 p-6">
                 <h2 class="mb-4 text-xl font-bold leading-6 lg:tracking-tighter">
                   <a href="_yt1-single.html" class="text-primary transition-colors hover:text-accent dark:text-white dark:hover:text-accent">
-                    I’ll be at the next YouCon 20’ in New York unveiling new and exciting gadgets!
+                    Penemuan Baru Kesekian Kalinya
                   </a>
                 </h2>
-                <div class="text-sm">February 09, 2022</div>
+                <div class="text-sm">21 Mei, 2024</div>
               </div>
             </div>
           </div>
           <div class="col-span-full sm:col-span-6 lg:col-span-4">
             <figure class="group overflow-hidden bg-gray-900">
               <a href="_yt1-single.html">
-                <img class="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src="assets/img/yt1/samples/post-img-3-370x240.jpg" alt="Here’s the X-mas Gamer Box from Powerstation and it packs some surprises" />
+                <img class="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src="/img/profile.jpg" />
               </a>
             </figure>
             <div class="relative -mt-20 mr-8 lg:mr-10">
               <div class="inline-flex bg-accent px-2 py-[6px] text-xs font-bold uppercase leading-none text-white">
-                Unboxings
+                Studi
               </div>
               <div class="bg-white dark:bg-gray-800 p-6">
                 <h2 class="mb-4 text-xl font-bold leading-6 lg:tracking-tighter">
                   <a href="_yt1-single.html" class="text-primary transition-colors hover:text-accent dark:text-white dark:hover:text-accent">
-                    Here’s the X-mas Gamer Box from Powerstation and it packs some surprises
+                    Daftar Penemuan Pertama yang Ditemukan
                   </a>
                 </h2>
-                <div class="text-sm">December 21st, 2021</div>
+                <div class="text-sm">21 Mei, 2024</div>
               </div>
             </div>
           </div>

@@ -2,6 +2,8 @@ import Image from "next/image";
 import HomepageHero from "@/components/Homepage/Hero";
 import HomepageAbout from "@/components/Homepage/About";
 import HomepageProfile from "@/components/Homepage/Profile";
+import HomepageModel from "@/components/Homepage/Model";
+
 import 'glightbox/dist/css/glightbox.min.css'
 import 'swiper/css';
 import HomepageInscription from "@/components/Homepage/Inscription";
@@ -12,8 +14,9 @@ export default function Home() {
     <>
       <HomepageHero />
       <HomepageAbout />
-      <HomepageProfile />
       <HomepageInscription />
+      <HomepageProfile />
+      <HomepageModel />
       <HomepageArticle />
     </>
   );

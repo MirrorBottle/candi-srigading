@@ -57,7 +57,7 @@ export default function HomepageProfile() {
         </svg>
       </div>
 
-      <div className="flex items-center justify-center absolute top-0 left-1/2 z-10 aspect-square w-[122px] translate-x-[380px] -translate-y-[25px] rotate-45 rounded-2xl bg-accent">
+      <div className="hidden md:flex items-center justify-center absolute top-0 left-1/2 z-10 aspect-square w-[122px] translate-x-[380px] -translate-y-[25px] rotate-45 rounded-2xl bg-accent">
         <FaVideo className="fill-white" size={50} />
       </div>
 

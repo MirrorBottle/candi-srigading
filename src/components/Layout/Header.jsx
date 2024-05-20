@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import { TfiClose, TfiMenu } from "react-icons/tfi";
+
 export default function Header() {
   return (
     <header id="site-header" className="text-white absolute inset-x-0 z-20">
@@ -11,8 +13,8 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="Picture of the author"
-                width={300}
-                height={300}
+                width={220}
+                height={220}
               />
             </a>
           </div>
@@ -24,15 +26,15 @@ export default function Header() {
             </li>
             <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100" href="_yt1-contact.html">Tentang</a></li>
             <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100" href="_yt1-contact.html">Artikel</a></li>
-            <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100" href="_yt1-contact.html">Galeri</a></li>
           </ul>
           <div className="flex">
-            <button className="js-menu-toggle mr-2 inline-flex py-4 px-2 sm:px-3 lg:hidden xl:px-4">
+            <button className="js-menu-toggle inline-flex py-4 px-2 sm:px-3 lg:hidden xl:px-4">
               <svg role="img" className="js-menu-toggle-icon-open h-6 w-6 fill-white">
-                {/* <use xlink:href="/vendor/img/yt1/sprite.svg#menu"></use> */}
+                <TfiMenu size={24} />
               </svg>
               <svg role="img" className="js-menu-toggle-icon-close hidden h-6 w-6 fill-white">
-                {/* <use xlink:href="/vendor/img/yt1/sprite.svg#menu-close"></use> */}
+                <TfiClose size={24} />
+
               </svg>
             </button>
           </div>
