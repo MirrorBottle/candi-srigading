@@ -54,8 +54,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)'],
-        base: [ '"Poppins", sans-serif' ],
-        heading: [ '"Poppins", sans-serif' ]
+        base: [ 'var(--font-poppins)' ],
+        heading: [ 'var(--font-poppins)' ]
       },
       fontSize: {
         '3xs': '0.625rem',

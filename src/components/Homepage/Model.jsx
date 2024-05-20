@@ -13,7 +13,7 @@ export default function Model() {
               </div>
             </div>
 
-            <div class="sketchfab-embed-wrapper mt-5 w-full"> <iframe title="Ilustrasi 3D Candi Srigading" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/42de446969bd477fbc4041a5f3b38486/embed" class="w-full h-[500px]"> </iframe></div>
+            <div className="sketchfab-embed-wrapper mt-5 w-full"> <iframe title="Ilustrasi 3D Candi Srigading" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/42de446969bd477fbc4041a5f3b38486/embed" className="w-full h-[500px]"> </iframe></div>
           </div>
         </div>
       </div>
