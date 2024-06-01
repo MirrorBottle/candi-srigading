@@ -13,7 +13,7 @@ export default function Footer() {
                 Lokasi Candi Srigading</div>
             </div>
             <div className="col-span-full md:col-start-8 md:mr-[-1px] lg:col-start-8 xl:col-start-8">
-              <iframe className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1859860989953!2d112.71815921137649!3d-7.875599078286264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62d86b3813359%3A0x7f9918c09128ff89!2sCandi%20Srigading%20-%20Situs%20Gumuk!5e0!3m2!1sid!2sid!4v1714897637401!5m2!1sid!2sid" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1859860989953!2d112.71815921137649!3d-7.875599078286264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62d86b3813359%3A0x7f9918c09128ff89!2sCandi%20Srigading%20-%20Situs%20Gumuk!5e0!3m2!1sid!2sid!4v1714897637401!5m2!1sid!2sid" height="250" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

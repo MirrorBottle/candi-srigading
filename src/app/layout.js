@@ -1,10 +1,11 @@
 import { Poppins } from "next/font/google";
 import { clsx } from 'clsx';
 import Script from 'next/script'
-import "./globals.css";
 import HeaderMobile from "@/components/Layout/HeaderMobile";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
+import Router from 'next/navigation';
+import "./globals.css";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], variable: '--font-poppins' });
 

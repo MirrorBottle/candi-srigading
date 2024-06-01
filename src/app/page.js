@@ -8,11 +8,13 @@ import 'glightbox/dist/css/glightbox.min.css'
 import 'swiper/css';
 import HomepageInscription from "@/components/Homepage/Inscription";
 import HomepageArticle from "@/components/Homepage/Article";
-
-export default function Home() {
+import { getHomepage } from "@/utils/contentful";
+export default async function Home() {
+  const homepage = await getHomepage();
+  console.log(homepage)
   return (
     <>
-      <HomepageHero />
+      <HomepageHero homepage={homepage} />
       <HomepageAbout />
       <HomepageInscription />
       <HomepageProfile />
