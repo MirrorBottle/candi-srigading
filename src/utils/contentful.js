@@ -21,6 +21,21 @@ export const getHomepage = async () => {
   return result
 }
 
+export const getInscriptions = async () => {
+  const response = await client.getEntries({
+    content_type: 'penemuan',
+  })
+  return response.items
+}
+
+export const getArticles = async (params = {}) => {
+  const response = await client.getEntries({
+    content_type: 'artikel',
+    ...params,
+  })
+  return response.items
+}
+
 export const getEntryBySlug = async (slug, type) => {
   const queryOptions = {
     content_type: type,

@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Model() {
+export default function Model({ homepage }) {
   return (
     <section>
       <div className="isolate bg-white py-14">

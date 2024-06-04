@@ -2,7 +2,16 @@ import React from 'react'
 import Image from 'next/image';
 import { FaPlay, FaVideo } from "react-icons/fa6";
 
-export default function HomepageProfile() {
+export default function HomepageProfile({ homepage }) {
+
+  const {
+    profileTitle,
+    profileSubtitle,
+    profileFirstDesc,
+    profileSecondDesc,
+    profileYoutubeLink,
+    profileYoutubeThumbnail
+  } = homepage.fields;
   return (
     <section className="relative md:pb-6 lg:pb-8 xl:pb-10">
       <div className="relative isolate overflow-hidden pb-8 pt-16 after:absolute after:inset-x-0 after:top-0 after:bottom-16 after:-z-20 after:bg-gray-100 dark:after:bg-gray-800 sm:pb-10 sm:pt-20 after:sm:bottom-24 md:pb-12 md:pt-32 after:md:bottom-28 lg:pb-16 lg:pt-36 after:lg:bottom-44 xl:pt-48 xl:pb-20 after:xl:bottom-60">
@@ -10,24 +19,24 @@ export default function HomepageProfile() {
 
           <div className="mb-12 flex flex-col flex-wrap gap-y-6 sm:mb-16 md:mb-20 lg:mb-24 xl:mb-28 xl:gap-y-12 items-baseline justify-between sm:flex-row">
             <div className="flex flex-col-reverse gap-y-2 sm:gap-y-3 md:gap-y-4 lg:gap-y-5 xl:gap-y-6">
-              <h2 className="leadin-none text-3xl font-bold tracking-tight text-primary dark:text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-6.5xl xl:leading-none">Video Profil</h2>
-              <div className="text-sm uppercase leading-tighter md:text-base">Media Tambahan</div>
+              <h2 className="leadin-none text-3xl font-bold tracking-tight text-primary dark:text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-6.5xl xl:leading-none">{ profileTitle }</h2>
+              <div className="text-sm uppercase leading-tighter md:text-base">{ profileSubtitle }</div>
             </div>
 
           </div>
 
           <div className="mb-8 grid gap-5 sm:mb-16 md:mb-20 md:grid-cols-2 md:gap-[30px] xl:mb-28 xl:-mt-3">
             <div className="text-xl tracking-tighter text-primary dark:text-white md:text-2xl lg:text-3xl lg:leading-snug xl:text-3.5xl xl:leading-snug">
-              Temuan Lengkap Harta Karun Arkeologi di Candi Srigading Malang
+              { profileFirstDesc }
             </div>
             <div className="tracking-tighter md:text-lg lg:pl-[70px] xl:leading-8">
-              Temuan harta karun arkeologi saat tim BPCB Jawa Timur melakukan ekskavasi Candi Srigading Malang menjadi bukti penting kesejarahan salah satu candi peninggalan Mataram kuno pra Mpu Sindok di Jawa Timur ini terus tetap bertahan hingga masa Kerajaan Majapahit.
+              { profileSecondDesc.content[0].content[0].value }
             </div>
           </div>
 
           <div className="block aspect-video">
-            <a href="https://www.youtube.com/watch?v=AMuJ3GDrcnA" className="glightbox group relative block h-full overflow-hidden bg-gray-900">
-              <img className="h-full w-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-75" src="/img/profile.jpg" alt="" />
+            <a href={profileYoutubeLink} className="glightbox group relative block h-full overflow-hidden bg-gray-900">
+              <img className="h-full w-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-75" src={`https:${profileYoutubeThumbnail.fields.file.url}`} alt="" />
               <span className="absolute top-1/2 left-1/2 flex aspect-square w-14 -translate-x-2/4 -translate-y-2/4 items-center justify-center rounded-full bg-accent md:w-20">
                 <FaPlay className="fill-white" size={30} />
               </span>
