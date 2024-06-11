@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { TfiClose, TfiMenu } from "react-icons/tfi";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -9,23 +10,23 @@ export default function Header() {
         <nav className="flex min-h-[64px] items-center justify-between py-1 lg:min-h-[90px] lg:py-4">
           {/* LOGO */}
           <div>
-            <a href="/">
+            <Link href="/">
               <Image
                 src="/logo.png"
                 alt="Picture of the author"
                 width={220}
                 height={220}
               />
-            </a>
+            </Link>
           </div>
           <ul className="hidden gap-x-7 xl:gap-x-10 text-lg font-bold lg:flex">
             <li className="">
-              <a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-left after:scale-x-100" href="_yt1-index.html">
+              <Link className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-left after:scale-x-0" href="/">
                 Beranda
-              </a>
+              </Link>
             </li>
-            <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100" href="_yt1-contact.html">Tentang</a></li>
-            <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100" href="_yt1-contact.html">Artikel</a></li>
+            <li className=""><Link href="/tentang" className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100">Tentang</Link></li>
+            <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left hover:after:scale-x-100 after:scale-x-0" href="_yt1-contact.html">Artikel</a></li>
           </ul>
           <div className="flex">
             <button className="js-menu-toggle inline-flex py-4 px-2 sm:px-3 lg:hidden xl:px-4">

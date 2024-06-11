@@ -34,7 +34,7 @@ export default function HomepageHero({ homepage }) {
                       <div className="mb-8 pr-4 text-sm tracking-tighter text-white lg:mb-12 lg:text-lg lg:leading-8 xl:pr-20">
                         {bannerSubtitle}
                       </div>
-                      <a href="#" className="relative isolate inline-flex overflow-hidden text-center text-xs font-bold leading-none transition-colors before:absolute before:inset-y-0 before:left-0 before:-z-10 before:block before:w-full before:origin-right before:scale-x-0 before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:text-sm py-3 px-4 lg:py-[14px] lg:px-12 bg-accent border-2 border-white before:bg-white text-white lg:text-white hover:text-primary">
+                      <a href="/tentang" className="relative isolate inline-flex overflow-hidden text-center text-xs font-bold leading-none transition-colors before:absolute before:inset-y-0 before:left-0 before:-z-10 before:block before:w-full before:origin-right before:scale-x-0 before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:text-sm py-3 px-4 lg:py-[14px] lg:px-12 bg-accent border-2 border-white before:bg-white text-white lg:text-white hover:text-primary">
                         Baca Lebih Lanjut!
                       </a>
                     </div>
