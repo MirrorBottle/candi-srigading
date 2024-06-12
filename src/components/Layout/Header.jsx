@@ -26,7 +26,7 @@ export default function Header() {
               </Link>
             </li>
             <li className=""><Link href="/tentang" className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left after:scale-x-0 hover:after:scale-x-100">Tentang</Link></li>
-            <li className=""><a className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left hover:after:scale-x-100 after:scale-x-0" href="_yt1-contact.html">Artikel</a></li>
+            <li className=""><Link href="/artikel" className="relative inline-flex items-center gap-x-2 leading-10 after:absolute after:bottom-[7px] after:left-0 after:h-[2px] after:bg-white after:transition-transform after:w-full after:origin-right hover:after:origin-left hover:after:scale-x-100 after:scale-x-0">Artikel</Link></li>
           </ul>
           <div className="flex">
             <button className="js-menu-toggle inline-flex py-4 px-2 sm:px-3 lg:hidden xl:px-4">

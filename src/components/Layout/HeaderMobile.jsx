@@ -16,9 +16,9 @@ export default function HeaderMobile() {
             </Link>
           </li>
           <li className="flex flex-wrap items-center gap-x-4 border-b border-b-gray-200 dark:border-b-gray-200/10">
-            <a className="flex-grow gap-x-1 py-4 leading-normal transition-colors hover:text-accent" href="_yt1-index.html">
+            <Link className="flex-grow gap-x-1 py-4 leading-normal transition-colors hover:text-accent" href="/artikel">
               Artikel
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

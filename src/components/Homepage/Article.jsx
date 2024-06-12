@@ -2,6 +2,7 @@ import React from 'react'
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 import moment from 'moment'
 import 'moment/locale/id'
+import Link from "next/link";
 
 export default function HomepageArticle({ homepage, articles }) {
   return (
@@ -18,7 +19,7 @@ export default function HomepageArticle({ homepage, articles }) {
             <span className="relative inline-flex h-[20px] w-[20px] items-center justify-center rounded-full border-2 border-primary dark:border-white">
               <IoChevronForwardOutline />
             </span>
-            <a className="text-primary hover:text-accent dark:text-white dark:hover:text-accent" href="_yt1-blog-grid.html">Lihat Semua Artikel</a>
+            <Link className="text-primary hover:text-accent dark:text-white dark:hover:text-accent" href="/artikel">Lihat Semua Artikel</Link>
           </div>
         </div>
 
@@ -26,7 +27,7 @@ export default function HomepageArticle({ homepage, articles }) {
           {articles.map(article => (
             <div className="col-span-full sm:col-span-6 lg:col-span-4">
               <figure className="group overflow-hidden bg-gray-900">
-                <a href="_yt1-single.html">
+                <a href="/">
                   <img className="aspect-[37/24] h-full w-full max-w-full object-cover duration-300 group-hover:scale-110 group-hover:opacity-75" src={`https:${article.fields.banner.fields.file.url}`} />
                 </a>
               </figure>
@@ -36,9 +37,9 @@ export default function HomepageArticle({ homepage, articles }) {
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-6">
                   <h2 className="mb-4 text-xl font-bold leading-6 lg:tracking-tighter">
-                    <a href="_yt1-single.html" className="text-primary transition-colors hover:text-accent dark:text-white dark:hover:text-accent">
+                    <Link href={`/artikel/${article.sys.id}`} className="text-primary transition-colors hover:text-accent dark:text-white dark:hover:text-accent">
                       { article.fields.title }
-                    </a>
+                    </Link>
                   </h2>
                   <div className="text-sm">{ moment(article.fields.date).locale('id').format("DD MMMM YYYY") }</div>
                 </div>

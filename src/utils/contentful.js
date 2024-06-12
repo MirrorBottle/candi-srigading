@@ -28,6 +28,10 @@ export const getInscriptions = async () => {
   return response.items
 }
 
+export const getArticle = async (id) => {
+  const response = await client.getEntry(id);
+  return response;
+}
 export const getArticles = async (params = {}) => {
   const response = await client.getEntries({
     content_type: 'artikel',

@@ -1,4 +1,5 @@
 import React from 'react'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export default function HomepageAbout({ homepage }) {
   const {
@@ -17,7 +18,7 @@ export default function HomepageAbout({ homepage }) {
               <p className="leading-tight tracking-tighter text-primary dark:text-white xl:text-2xl">{ aboutSubtitle }</p>
             </hgroup>
             <div className="tracking-tighter md:text-md md:leading-8">
-              <p>{pendahuluanDesc.content[0].content[0].value}</p>
+              <p>{documentToReactComponents(pendahuluanDesc)}</p>
             </div>
             <img src="/img/sponsor.png" alt="Sponsor" width="400" className='mt-3' />
           </div>

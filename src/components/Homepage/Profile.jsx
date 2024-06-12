@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { FaPlay, FaVideo } from "react-icons/fa6";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export default function HomepageProfile({ homepage }) {
 
@@ -30,7 +31,7 @@ export default function HomepageProfile({ homepage }) {
               { profileFirstDesc }
             </div>
             <div className="tracking-tighter md:text-lg lg:pl-[70px] xl:leading-8">
-              { profileSecondDesc.content[0].content[0].value }
+              { documentToReactComponents(profileSecondDesc) }
             </div>
           </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { getHomepage } from "@/utils/contentful";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export default async function AboutPage() {
   const homepage = await getHomepage();
@@ -30,7 +31,7 @@ export default async function AboutPage() {
             <section class="grid grid-cols-12 gap-x-5 gap-y-10 md:gap-x-6 lg:gap-x-[30px] mb-20 md:mb-40 lg:mb-52 xl:mb-60">
               <div class="col-span-full">
                 <div class="tracking-tighter md:text-lg md:leading-8">
-                  <p>{aboutPageDesc.content[0].content[0].value}</p>
+                  <p>{documentToReactComponents(aboutPageDesc)}</p>
                 </div>
               </div>
             </section>
