@@ -14,6 +14,7 @@ export default function Model({ homepage }) {
             </div>
 
             <div className="sketchfab-embed-wrapper mt-5 w-full"> <iframe title="Ilustrasi 3D Candi Srigading" frameBorder="0" allowFullScreen={true} mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" src="https://sketchfab.com/models/42de446969bd477fbc4041a5f3b38486/embed" className="w-full h-[500px]"> </iframe></div>
+            <p className="mt-2">*Disclaimer pada model bagian atas candi hanya sebuah ilustrasi</p>
           </div>
         </div>
       </div>
